@@ -8,3 +8,4 @@ malicious_packages/
 benign_packages/
 .cache/
 .codeql/
+packages/
