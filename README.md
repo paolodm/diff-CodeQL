@@ -39,6 +39,31 @@ Before using DiffStaticAnalyzer, ensure that [CodeQL](https://codeql.github.com/
 
    You should see the installed CodeQL version.
 
+5. **Install 7-Zip:**
+   This tool uses 7-Zip (7z) to extract npm package files. It's not installed by default on macOS or most Linux distributions.
+
+   - On macOS, install it using Homebrew:
+     ```bash
+     brew install p7zip
+     ```
+
+   - On Linux (Debian/Ubuntu):
+     ```bash
+     sudo apt-get install p7zip-full
+     ```
+
+   - On Linux (Fedora/RHEL/CentOS):
+     ```bash
+     sudo dnf install p7zip p7zip-plugins
+     ```
+
+   - On Windows, download and install from the [7-Zip website](https://www.7-zip.org/download.html).
+
+   Verify the installation by running:
+   ```bash
+   7z --help
+   ```
+
 Now you're ready to use DiffStaticAnalyzer with the CodeQL CLI for npm package analysis.
 
 ## Installation
@@ -47,6 +72,12 @@ No installation is required. Simply clone this repository to your local machine.
 
 ```bash
 git clone https://github.com/your-repo/diff-static-analyzer.git
+```
+
+After cloning, install the required Python dependencies:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage

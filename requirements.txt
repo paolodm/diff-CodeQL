@@ -1,0 +1,10 @@
+numpy
+pandas
+seaborn
+scipy
+requests
+matplotlib
+natsort
+scikit-learn
+beautifulsoup4
+configparser
